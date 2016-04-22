@@ -1,9 +1,9 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloWorld'
 
 jar {
-	manifest {
-		attributes 'Main-Class': 'hello.HelloWorld'
-	}
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
